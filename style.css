@@ -1,0 +1,54 @@
+:root {
+    --text-width: 600px;
+}
+
+section {
+    font-size: 18px;
+    width: var(--text-width);
+    margin: auto;
+}
+
+.section-title {
+    font-size: 2rem;
+}
+.sub-title {
+    font-size: 2rem;
+    text-align: center;
+    color: rgba(62, 150, 176, 0.854);
+}
+.big-title {
+    font-size: 5rem;
+    text-align: center;
+}
+.mid-title {
+    font-size: 3rem;
+    text-align: center;
+    color: rgba(62, 150, 176, 0.854);
+}
+.author {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.751);
+    text-align: center;
+}
+.intro-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color:rgb(42, 100, 170);
+}
+.chart-holder {
+    text-align: center;
+}
+
+.section-text {
+    width: var(--text-width);
+    margin: auto;
+    
+}
+.takeaway-text {
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    text-align: center;
+    color:rgb(42, 100, 170);
+}
+svg {
+    border: 2px solid white
+}

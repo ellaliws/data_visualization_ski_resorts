@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Final Project</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <section>
+      <h1 class="big-title">SkiSights:</h1>
+      <h1 class="mid-title">Carving Adventures and Olympic Triumphs</h1>
+      <h2 class="author">A Project by: Wushuang Li</h2>
+      <p class="intro-text">
+        Welcome to an exhilarating journey through the snowy slopes and thrilling alpine landscapes! 
+        Skiing is a popular sport around the world.<br/>
+        In this visionary project, we invite skiers and winter sports enthusiasts to embark on a breathtaking 
+        adventure, uncovering new horizons for their skiing endeavors both in the United States and around the globe.
+        This project aims to encourage ski lovers to explore more ski treasures and to 
+        foster a sense of pride!
+      </p>
+    </section>
+
+    <!-- chart 1 -->
+    <section>
+      <h1 class="section-title">Uncover the Snowy Treasures in USA</h1>
+      <p class="section-text">
+        
+        This geometric visualization allows you to virtually traverse the ski resorts in the United States.
+        As you hover through the map, you can explore different locations and some 
+        other features such as the summit and acres of each resort.
+
+        
+      </p>
+     
+    </section>
+    <div class="chart-holder">
+      <div id="map-container"></div>
+    </div>
+    <p class="section-text">
+        Some Insights:<br/>
+        - By looking at the color density of the states, you can identify some states with more ski resorts.<br/>
+        - You can also locate a resort on the map or explore other ski resorts near some areas!<br/>
+        Some states have high density of ski resorts, such as Colorado, Michigan, and New York.<br/>
+        - Some ski resort that are really close on the map may have similar summit because their location 
+        have similar terrain. For example, resorts named Vail and Aspen Mt in Colorado state have similar summit(top elevation) around 11000 feet.
+    </p>
+    
+
+    <!-- chart 2 Stacked Bar chart-->
+    <section>
+      <h1 class="section-title">Unveiling the Slope Levels - Find Your Perfect Challenge!</h1>
+      <p class="section-text">
+        Besides the North America, Europe may be the most well-known destination for skiing.
+        For ski lovers, it can be fun to explore some locations in Europe for skiing. 
+        Important information can include the difficulty levels of the ski slopes in the ski resorts.
+        As we can usually see in a ski resort, there are signs to show three different difficulty levels 
+        for the ski routes. <br/>
+        - Green slopes and runs are friendly to beginners.<br/>
+        - Blue slopes are at an intermediate level where slightly steeper slopes can be experienced.<br/>
+        - Black slopes are advanced and for experts<br/>
+        The lengths of these slopes are measured in kilometers.
+         <br/>
+        This visualization aims to deliver information about difficulty of ski slopes by country in Europe. So that
+        we can all find our perfect challenge when exploring new places to have fun.
+
+        <br/>
+        For a ski beginner like me, you may want to look at only Easy Level of 
+        these ski resorts. Click on the "Easy" buttons to see the total KMs of Easy runs 
+        in each European country. To see all difficulty levels, click on "All Levels". <br/>
+        <br/>
+      </p>
+      <form>
+        <label><input type = "radio" name = "mode" value = "grouped"> Easy Level </label>
+        <label><input type = "radio" name = "mode" value = "stacked" checked> All Levels </label>
+      
+    </form>
+    </section>
+    <div class="chart-holder">
+        <div id="barchart-container"></div>
+       
+    </div>
+    <p class="section-text">
+        Some Insights:<br/>
+        Compare different countries’ ski resorts: they have different proportions.<br/>
+            of difficulty levels, which depend on the location and the terrain.<br/>
+        Countries with a lot of ski resorts：<br/>
+        - We can see that Austria, France, and Switzerland have high total length of runs and slopes! 
+        These countries have a lot of ski resorts! 
+        If you want to explore many different places to ski, these countries may be good choices!
+
+    </p>
+    
+    
+    <!-- chart 3 Network-->
+    <section>
+      <h1 class="section-title">Frostbound Connections: Unraveling the Olympic Nation Web</h1>
+      <p class="section-text">
+        
+            Exploring more places to have fun is not all --
+            this project believes in infusing a sense of pride for ski lovers! 
+            A network will uncover the accomplishments of your home country in the Olympic Winter Games! 
+            Your country might hold the game or win podiums. <br/>
+            Hover through the green nodes to show the podiums of a nation has won. The orange nodes will 
+            simply show that it has been a host country of Olympic Winter Game.
+            Let’s enjoy our sport on the world stage!
+
+      </p>
+    </section>
+    <div class="chart-holder">
+        <div id="graph-container"></div>
+      
+    </div>
+    <p class="section-text">
+        
+        Some insights: <br/>
+        - The thickness of the links represents the occurrence of winning a podium!<br/>
+        - For example, Italy won 2 podiums in the 2002 Olympic Winter Game hosted in the United States. 
+        So ITA has a thicker link towards United States<br/>
+        - All links of Australia are thick! This means Australia won podiums multiple times in each game!
+        
+    </p>
+    <section>
+        <h2 class="sub-title">Beyond Data</h1>
+            <p class="takeaway-text">
+                We redefine the boundaries of skiing exploration and celebrate the accomplishments on a global stage. <br/>
+                Be proud of what we love and encourage the exploration spirit!
+                
+                
+            </p>
+    </section>
+    
+    <script src="script.js"></script>
+    <script src="podiums_net.js"></script>
+    <script src="table.js"></script>
+    
+  </body>
+</html>
